@@ -1,0 +1,39 @@
+/***********************************************************
+// Workshop 2: Dynamic Memory
+// File reflect.txt
+// Version 2.0
+// Date 24.05.2018
+// Author Artem Kulihina
+// Revision History
+///////////////////////////////////////////////////////////
+***********************************************************/
+
+
+1) Why do you need to allocate new dynamic memory when you increase the
+size of an existing array of dynamically allocated memory?
+
+We always have to specify the size of an array, so if we need to increase it down the road, we will need to allocate
+a new block with bigger size and copy there existing elemets of an old array.
+
+
+2) The Kingdom structure stores the name of the kingdom in an array of characters.
+At the end of the program, we do not use the delete operator to deallocate
+the memory occupied by the name. Why don’t we need to use the
+delete operator on this array itself? Explain.
+
+its automaticlly get delted after we go out of the scope 
+
+3) There are two display(...) function definitions. How does the compiler
+know which definition to call from your main function? 
+
+different signature(parameters). One takes 2 parameters, the other one only 1 parameter
+
+
+
+QUIZ 2 REFLECTION
+2. A defenition is a declaration. Answer: Yes
+3. A function's signature consists of thje function's indentifier, the function's parameters and... Answer: type indentifier (type indentifier, [..., type indentifier]);
+5. Write a statement that declares an array of 6 pointers to float in statically allocated memory. Answer: float*[6]
+6.Write a statement that deallocate the dynamically allocated memory for an array myCourses[10]; Answer:delete[]myCourses
+7. Write a forward declaretion of the struct Item defined in the program in question 4 above. Answer: Item = apple
+

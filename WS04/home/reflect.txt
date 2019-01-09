@@ -1,0 +1,30 @@
+///////////////////////////////////////////////////////////
+// Name			Date		              
+// Artem       2018/06/07          
+///////////////////////////////////////////////////////////
+
+1)	What is a safe empty state? Could you define another state as the safe emp-ty state?
+safe empty state is basically a fuse. When we created an object we have to set something to all its parameters, for example, all "0". So now, if we create an object and call it, 
+the code will not break or show us strange output, but it will show us what we need. This is exactly what empty state is.
+
+Could you define another state as the safe empty state? - I did not understand this question.
+in case I did understand:
+yes we can.
+
+
+2)	Describe how you have minimized code duplication.
+We have created passenger.cpp file with our constructors and other functions, so instead of rewriting code every time we need to display something, for example,
+we just call display() function. Or to check if the date is not empty again we use 1 function instead of rewriting every time something.
+
+3)	Explain why the canTravelWith(...) member function can access the pri-vate data of the object referenced in its parameter.
+Because prototype of canTravelWith() is located inside the Passenger class. 
+
+4)	What statement do you need to add to ensure that the strncpy(...) func-tion executes correctly?
+I have used "strcpy" and to use it in matrix we need to "#include <cstring>". in VS 2017 we have to say "strcpy_s" instead.
+
+5)	Explain what you have learned in this workshop.
+I did not learn much, but I did strengthen my knowledge how to use .h files, prototypes, how to use constructor overloading and how to minimize my code by creating own functions to check whatever I need.
+P.s. also I learned CPP functions like "strcpy" and "strlen"
+
+QUIZ REFLECTION:
+4. The Safe empty state is ____________ for all the objects of the same class. Answer: Indectical.

@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////
+// Name			Date		              Reason
+// Artem       2018/05/31          
+///////////////////////////////////////////////////////////
+
+1)	How many elements are there in each C-style character string that stores a family or given name for the account? Why?
+41. The task asks us to make 40 as our maximum length, but we have to remember to include "/n" operator, so for him, we have to make the length +1
+
+
+2)	Your class declares two member functions named set(...).  In C, this would generate an error.  Name the feature of C++ that allows this.
+function overloading or method overloading.
+
+3)	What have you learned during this workshop?
+We have learned how to use overloading, oh god... how to calculate SIN to make sure it's correct... I spend on it most of the time....
+Also, now we can see better, how to use prototypes and modular coding.
+Lastly, I learned how to user setprecision
+
+Quiz 3 Reflection:
+2.A technique that programmers use to provide object encapsulation is to usually make objects' data ___. Answer: private
+7.The precision() memeber function sets the precision of subsequent floating point fields. The default precision is ___ units. Answer: 6

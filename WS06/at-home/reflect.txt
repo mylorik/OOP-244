@@ -1,0 +1,25 @@
+///////////////////////////////////////////////////////////
+// Name			Date		              
+// Artem       2018/07/05          
+///////////////////////////////////////////////////////////
+
+1)	Why does the copy assignment operator check for self-assignment before doing anything else?
+to reduce redundancy movements. We do not need to copy anything, if that is already exists
+
+2)	List how you avoided duplication of code.
+using operator overloading I wrote the logic only once, and in the client code, I was just saying "+=" or "=" instead of writing this logic every time. Same thing for "display" and "isEmpty" functions
+
+3)	List what you have learned in completing this workshop.
+I have learned how to use operator overloading, and that Matrix is super old and does not work the same as you test the code on school pc.
+
+Quiz 6 Reflection
+
+1) MyClass t3 = t1; ----->  copy;
+    t2 = t1  -----> assignment;
+3) 
+DollarValue = src;
+email = new Class [str.lent(src.email)+1]
+delete [] email;
+dollarValue = new Class [str.lent(src.dollarValue)+1]
+delete [] email;
+

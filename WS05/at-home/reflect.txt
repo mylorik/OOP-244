@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////////////
+// Name			Date		              
+// Artem       2018/06/14          
+///////////////////////////////////////////////////////////
+
+Create a file reflect.txt that contains the answers to the following questions:
+
+1.	The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object.
+because operator+ returns a new object of the result of "+" instead of "this". so if we have "c = a+b" returning reference to "a" or "b" will
+be wrong, as it would be "+=", to return "c" we need to create a new object
+
+2.	List the temporary objects in the tester module.
+a,b,c,d,e
+
+3.	List the simplifications that you made to your class to minimize duplication.
+isEmpty(), reduce(), gcd(), max(), min()
+		
+4.	Explain what you have learned in this workshop.
+I have learned how to overload biunary and unary operators like + - != == * etc.
+
+
+
+Quiz 5 Reflection
+
+1. (1)There are two ways to overload an operator, Name them.
+Member operators and Helper operators
+2. (2)What are the four parts of the signature of a member operator.
+The signature of an overloaded member operator consists of:
+the operator keyword
+the operation symbol
+the type of its right operand, if any
+the const status of the operation
+
+3. (6)Having the following class answer the upcoming questions:
+class Container {
+ int m_volume;
+ int m_capacity;
+public:
+ Container();
+ Container(int volume, int capacity);
+// 1
+ ___Container&____________ operator__++___();
+// 2
+ ____Container___________ operator_++____(int____);
+// 3
+___int____________ operator__+=___(_int_______ _volume___________);
+Fill in the blank in the questions below and their declaration above:
+1- Overload the pre-fix “++” operator to add one to the volume of the Container only
+if the volume is less than the capacity. This operator returns the reference of
+the current Container object.
+___Container&_____ _Container________::operator__++_________(){
+ if (_m_volume< m_capacity_____) {
+ ____m_volume +=1_______;
+ }
+ return __*this___________;
+}
+2- Overload the post-fix “++” operator to add one to the volume of the Container only
+if the volume is less than the capacity. This operator returns a copy of the
+current Container object before the addition.
+___Container __ Container ____::operator___++_______(____int________) {
+ _____Container_____ temp = __*this___________;
+ if (__m_volume< m_capacity ______) {
+ ____ m_volume +=1_______;
+ }
+ return temp;
+}
+3- Overload the “+=” operator to add an integer value to the volume of the Container
+only if the sum is not greater than the capacity and then return the volume
+___int_____ ___Container________::operator____+=______(__int____ _volume_______) {
+ if (__m_volume< m_capacity - volume____________________) {
+ ____m_volume += volume____________________;
+ }
+ return m_volume;
+}

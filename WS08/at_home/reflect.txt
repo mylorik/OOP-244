@@ -1,0 +1,14 @@
+///////////////////////////////////////////////////////////
+// Name			Date		              
+// Artem       2018/07/19       
+///////////////////////////////////////////////////////////
+
+
+1.	What is the difference between an abstract base class and a concrete class?
+abstract class cannot have instances, and concrete class CAN have direct instances
+
+2.	Identify the functions that shadow functions of the same name in your solution?
+credit and debit 
+
+3.	Explain what have you learned in this workshop.
+using derived classes, interface and virtual functions. Also I have learned more about OOP, how should I manage files.
